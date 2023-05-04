@@ -1,10 +1,10 @@
 cloud:
   aws:
     credentials:
-      access-key: AKIA6KZTVXHXDZEZLFF6
-      secret-key: FQS1+c6pzp5Bz17w0yHD7uQSRQGESMwsxBjR8c80
+      access-key: #add your access key
+      secret-key: #add your secret key
     region:
-      static: ap-south-1
+      static: #add region
     stack:
       auto: false
 
@@ -20,9 +20,9 @@ spring:
       maxFileSize: 5MB
       maxRequestSize: 10MB
   datasource:
-    url: jdbc:mysql://localhost:3306/mydatabase
-    username: pawan
-    password: root123
+    url: jdbc:mysql://localhost:3306/{your_database_schema}
+    username: #User Name
+    password: #Password
   jpa:
     hibernate:
       ddl-auto: update
@@ -56,4 +56,5 @@ myapp:
       table-name: file_metadata
 
 server:
-  port: 9091
+  port: #Desired server
+  
